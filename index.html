@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="faqApp" lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba FAQ</title>
+	<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" /> -->
+
+	<!-- Toteat -->
+	<link rel="stylesheet" href="styles/compartido.css">
+	<link rel="stylesheet" href="styles/ficons1.css">
+	<link rel="stylesheet" href="styles/ficons2.css">
+	<link rel="stylesheet" href="styles/ficons3.css">
+	<link rel="stylesheet" href="styles/fonts.css">
+	<link rel="stylesheet" href="styles/treeView.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- End Toteat -->
+
+	<!-- SPELLS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.2/firebase.js'></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body ng-controller="mainController">
+
+	<div id="snapContainer" class="snapcerrado fullHeight">
+		<div class="contenedorFlexible fullHeight bg03">
+			<div id="barraNavegacion" class="noseleccionable">
+				<div id="navTexto">
+					<div class="logoTT tt-xs navbar-brand">
+						<span></span>
+						<span></span>
+						<span class="toticon toticon-LogoSoloTot fg02"></span>
+						<span class="toticon toticon-LogoSoloEat fg01"></span>
+					</div>
+					<div style="display:inline-block" class="clickeable"></div>
+					<div id="navLeft">
+						<button class="toticon toticon-stack tt-xs fgwhite" id="toggleMenu"></button>
+						<span class="loadingContainer"><img src="img/loading.gif" width="20" height="20" border="0"></span>
+						<span class="indicadorDrone toticon toticon2-jet tt-xs"></span>
+						<span class="indicadorDrone">X</span>
+					</div>
+					<div id="navRight">
+						<div class="logoTT tt-s">
+							<span class="toticon toticon-LogoToteatCirculo fg02"></span>
+							<span class="toticon toticon-LogoToteatLengua fg01"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contenedorFlexible ng-scope bgwhite">
+				<div class="contenedor ng-binding fullHeight escruleable">
+					<div ng-view></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="/" class="navbar-brand">Ejemplo ruteando en Angular</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><i class="fa fa-home"> </i> Home</a></li>
+				<li><a href="#faq"><i class="fa fa-shield"> </i> FAQ</a></li>
+				<li><a href="#mantenedor"><i class="fa fa-comment"> </i> Editar</a></li>
+			</ul>
+		</div>
+	</nav>
+	<footer class="text-center">
+		<p>Ver el tutorial en <a href="http://scotch.io/tutorials/javascript/single-page-apps-with-angularjs-routing-and-templating">Scotch.io</a></p>
+		<p>Ver un tutorial de <a href="http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview">Animando App Angular Single Page</a></p>
+	</footer> -->
+</body>
+</html>
