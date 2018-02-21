@@ -1,0 +1,568 @@
+<div class="navTitulo">
+	<div class="titulo">
+		<span>Lista FAQ's </span>
+	</div>
+	<div class="botones buscador" >
+		<a href="#"/>
+		<input type="text" ng-model="buscador" placeholder="Buscar..."/></a>
+	</div>
+</div>
+<div class="paginador">
+	<div class="paginasContenedor ng-isolate-scope" >
+		<div class="botonPagina ng-hide" >
+			<button class="toticon toticon2-caretizquierda tt-s circulo bg07 fgwhite"></button>
+		</div><!-- ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope " >
+			<span class="ng-binding botonPagina si">1</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope" >
+			<span class="ng-binding botonPagina">2</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope" >
+			<span class="ng-binding botonPagina">3</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope" >
+			<span class="ng-binding botonPagina">4</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope" >
+			<span class="ng-binding botonPagina">5</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-hide" >
+			<button class="toticon toticon2-caretderecha tt-s circulo bg07 fgwhite" ></button>
+		</div>
+		<hr>
+		<table class="table ">
+			<!-- ngRepeat: campo in config.campos  | filter:{escondido: 0} -->
+			<th>
+				<td class=" inferior">ID</td><!-- end ngRepeat: campo in config.campos  | filter:{escondido: 0} -->
+				<td class="size20 inferior">Pregunta</td><!-- end ngRepeat: campo in config.campos  | filter:{escondido: 0} -->
+				<td class="size20 inferior">votos sí</td><!-- end ngRepeat: campo in config.campos  | filter:{escondido: 0} -->
+				<td class="size10 courierinput inferior">votos no</td><!-- end ngRepeat: campo in config.campos  | filter:{escondido: 0} -->
+				<td class="size10 courierinput inferior">Categorías</td>
+				<td class="size10 courierinput inferior">
+					<button class="toticon toticon2-mas tt-sxx botonDescargar" ><span>Nueva pregunta</span>
+					</button>
+				</td>
+			</th>
+			<tr>
+				<!-- ngIf: !config.noEsBorrable -->
+				<td class="editLinea ng-scope" ></td>
+				<!-- ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class="bulkItemInput ng-scope size10">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 1 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> ¿Cómo puedo saber si el drone está funcionando? </div>
+					<div>
+						<ul class="">
+							<span class="tag">Administrador</span>
+							<span class="tag">Dueño</span>
+							<span class="tag">Soporte</span>
+							<span class="tag">Cajero</span>
+						</ul>
+					</div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 12 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size10 courierinput">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 11 </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class=" ng-scope size10 ">
+
+					<div class=" ui-select-multiple select2 select2-container select2-container-multi ng-valid">
+						<ul class="select2-choices">
+							<span class="ui-select-match" placeholder="Categorías..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Drone</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+							<span class="ui-select-match" placeholder="Telefonos..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Impresoras</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+						      <!-- <li class="select2-search-field">
+						        <input type="text" role="combobox" aria-expanded="true" aria-owns="ui-select-choices-0" aria-label="Select box" aria-activedescendant="ui-select-choices-row-0-0" class="select2-input ui-select-search ng-pristine ng-untouched ng-valid" placeholder=""  style="width: 112px;" >
+						    </li> -->
+						</ul>
+						<div class="select2-drop select2-with-searchbox select2-drop-active select2-display-none" >
+							<ul class="ui-select-choices ui-select-choices-content select2-results ng-scope">
+								<li class="ui-select-choices-group" >
+									<div class="ui-select-choices-group-label select2-result-label ng-binding ng-hide" >
+									</div>
+									<ul role="listbox" id="ui-select-choices-0" class="select2-result-single"><!-- ngRepeat: person in $select.items -->
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ng-pristine ng-untouched ng-valid ng-scope">  </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td>
+
+					<a href="#mantenedor-edit">
+						<button class="toticon toticon-pencil tt-xs botonDescargar">
+						</button></a></span>
+						      <!-- <button class="toticon toticon-trash tt-xs botonDescargar">
+						  </button> -->
+						  <span class="toticon toticon-check ttx xs" style="padding-top:3px"></span>
+				</td>
+			</tr>
+			<tr>
+				<!-- ngIf: !config.noEsBorrable -->
+				<td class="editLinea ng-scope" ></td>
+				<!-- ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class="bulkItemInput ng-scope size10">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 2 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> ¿Cómo puedo saber si el drone está funcionando? </div>
+					<div>
+						<ul class="">
+							<span class="tag">Administrador</span>
+							<span class="tag">Dueño</span>
+							<span class="tag">Soporte</span>
+							<span class="tag">Cajero</span>
+						</ul>
+					</div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 34 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size10 courierinput">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 31 </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class=" ng-scope size10 ">
+
+					<div class=" ui-select-multiple select2 select2-container select2-container-multi ng-valid">
+						<ul class="select2-choices">
+							<span class="ui-select-match" placeholder="Categorías..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Drone</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+							<span class="ui-select-match" placeholder="Telefonos..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Impresoras</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+							  <!-- <li class="select2-search-field">
+							    <input type="text" role="combobox" aria-expanded="true" aria-owns="ui-select-choices-0" aria-label="Select box" aria-activedescendant="ui-select-choices-row-0-0" class="select2-input ui-select-search ng-pristine ng-untouched ng-valid" placeholder=""  style="width: 112px;" >
+							</li> -->
+						</ul>
+						<div class="select2-drop select2-with-searchbox select2-drop-active select2-display-none" >
+							<ul class="ui-select-choices ui-select-choices-content select2-results ng-scope">
+								<li class="ui-select-choices-group" >
+									<div class="ui-select-choices-group-label select2-result-label ng-binding ng-hide" >
+									</div>
+									<ul role="listbox" id="ui-select-choices-0" class="select2-result-single"><!-- ngRepeat: person in $select.items -->
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ng-pristine ng-untouched ng-valid ng-scope">  </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td>
+
+					<a href="#mantenedor-edit">
+						<button class="toticon toticon-pencil tt-xs botonDescargar"></button>
+					</a>
+							  <!-- <button class="toticon toticon-trash tt-xs botonDescargar">
+							</button> -->
+						<!-- <span class="toticon toticon-check ttx xs" style="padding-top:3px"></span> -->
+				</td>
+			</tr>
+			<tr>
+				<!-- ngIf: !config.noEsBorrable -->
+				<td class="editLinea ng-scope" ></td>
+				<!-- ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class="bulkItemInput ng-scope size10">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 3 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> ¿Cómo puedo saber si el drone está funcionando? </div>
+					<div>
+						<ul class="">
+							<span class="tag">Administrador</span>
+							<span class="tag">Dueño</span>
+							<span class="tag">Soporte</span>
+							<span class="tag">Cajero</span>
+						</ul>
+					</div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 2 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size10 courierinput">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 23 </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class=" ng-scope size10 ">
+
+					<div class=" ui-select-multiple select2 select2-container select2-container-multi ng-valid">
+						<ul class="select2-choices">
+							<span class="ui-select-match" placeholder="Categorías..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Drone</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+							<span class="ui-select-match" placeholder="Telefonos..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Impresoras</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+						      <!-- <li class="select2-search-field">
+						        <input type="text" role="combobox" aria-expanded="true" aria-owns="ui-select-choices-0" aria-label="Select box" aria-activedescendant="ui-select-choices-row-0-0" class="select2-input ui-select-search ng-pristine ng-untouched ng-valid" placeholder=""  style="width: 112px;" >
+						    </li> -->
+						</ul>
+						<div class="select2-drop select2-with-searchbox select2-drop-active select2-display-none" >
+							<ul class="ui-select-choices ui-select-choices-content select2-results ng-scope">
+								<li class="ui-select-choices-group" >
+									<div class="ui-select-choices-group-label select2-result-label ng-binding ng-hide" >
+									</div>
+									<ul role="listbox" id="ui-select-choices-0" class="select2-result-single"><!-- ngRepeat: person in $select.items -->
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ng-pristine ng-untouched ng-valid ng-scope">  </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td>
+
+					<a href="#mantenedor-edit">
+						<button class="toticon toticon-pencil tt-xs botonDescargar">
+						</button></a>
+						      <!-- <button class="toticon toticon-trash tt-xs botonDescargar">
+						  </button> -->
+					  <span class="toticon toticon-check ttx xs" style="padding-top:3px"></span>
+				</td>
+			</tr>
+			<tr>
+				<!-- ngIf: !config.noEsBorrable -->
+				<td class="editLinea ng-scope" ></td>
+				<!-- ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class="bulkItemInput ng-scope size10">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 4 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> ¿Cómo puedo saber si el drone está funcionando? </div>
+					<div>
+						<ul class="">
+							<span class="tag">Administrador</span>
+							<span class="tag">Dueño</span>
+							<span class="tag">Soporte</span>
+							<span class="tag">Cajero</span>
+						</ul>
+					</div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 23 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size10 courierinput">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 15 </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class=" ng-scope size10 ">
+
+					<div class=" ui-select-multiple select2 select2-container select2-container-multi ng-valid">
+						<ul class="select2-choices">
+							<span class="ui-select-match" placeholder="Categorías..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Drone</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+							<span class="ui-select-match" placeholder="Telefonos..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Impresoras</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+									</span>
+						      <!-- <li class="select2-search-field">
+						        <input type="text" role="combobox" aria-expanded="true" aria-owns="ui-select-choices-0" aria-label="Select box" aria-activedescendant="ui-select-choices-row-0-0" class="select2-input ui-select-search ng-pristine ng-untouched ng-valid" placeholder=""  style="width: 112px;" >
+						    </li> -->
+						</ul>
+						<div class="select2-drop select2-with-searchbox select2-drop-active select2-display-none" >
+							<ul class="ui-select-choices ui-select-choices-content select2-results ng-scope">
+								<li class="ui-select-choices-group" >
+									<div class="ui-select-choices-group-label select2-result-label ng-binding ng-hide" >
+									</div>
+									<ul role="listbox" id="ui-select-choices-0" class="select2-result-single"><!-- ngRepeat: person in $select.items -->
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ng-pristine ng-untouched ng-valid ng-scope">  </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td>
+
+					<a href="#mantenedor-edit">
+						<button class="toticon toticon-pencil tt-xs botonDescargar">
+						</button></a></span>
+						      <!-- <button class="toticon toticon-trash tt-xs botonDescargar">
+						  </button> -->
+						  <span class="toticon toticon-check ttx xs" style="padding-top:3px"></span>
+				</td>
+			</tr>
+			<tr>
+				<!-- ngIf: !config.noEsBorrable -->
+				<td class="editLinea ng-scope" ></td>
+				<!-- ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class="bulkItemInput ng-scope size10">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 5 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> ¿Cómo puedo saber si el drone está funcionando? </div>
+					<div>
+						<ul class="">
+							<span class="tag">Administrador</span>
+							<span class="tag">Dueño</span>
+							<span class="tag">Soporte</span>
+							<span class="tag">Cajero</span>
+						</ul>
+					</div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 33 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size10 courierinput">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 2 </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class=" ng-scope size10 ">
+
+					<div class=" ui-select-multiple select2 select2-container select2-container-multi ng-valid">
+						<ul class="select2-choices">
+							<span class="ui-select-match" placeholder="Categorías..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Drone</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+							<span class="ui-select-match" placeholder="Telefonos..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Impresoras</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+						      <!-- <li class="select2-search-field">
+						        <input type="text" role="combobox" aria-expanded="true" aria-owns="ui-select-choices-0" aria-label="Select box" aria-activedescendant="ui-select-choices-row-0-0" class="select2-input ui-select-search ng-pristine ng-untouched ng-valid" placeholder=""  style="width: 112px;" >
+						    </li> -->
+						</ul>
+						<div class="select2-drop select2-with-searchbox select2-drop-active select2-display-none" >
+							<ul class="ui-select-choices ui-select-choices-content select2-results ng-scope">
+								<li class="ui-select-choices-group" >
+									<div class="ui-select-choices-group-label select2-result-label ng-binding ng-hide" >
+									</div>
+									<ul role="listbox" id="ui-select-choices-0" class="select2-result-single"><!-- ngRepeat: person in $select.items -->
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="ng-pristine ng-untouched ng-valid ng-scope">  </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td>
+
+					<a href="#mantenedor-edit">
+						<button class="toticon toticon-pencil tt-xs botonDescargar">
+						</button></a></span>
+						      <!-- <button class="toticon toticon-trash tt-xs botonDescargar">
+						  </button> -->
+						  <span class="toticon toticon-check ttx xs" style="padding-top:3px"></span>
+				</td>
+			</tr>
+			<tr>
+				<!-- ngIf: !config.noEsBorrable -->
+				<td class="editLinea ng-scope" ></td>
+				<!-- ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class="bulkItemInput ng-scope size10">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 6 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> ¿Cómo puedo saber si el drone está funcionando? </div>
+					<div>
+						<ul class="">
+							<span class="tag">Administrador</span>
+							<span class="tag">Dueño</span>
+							<span class="tag">Soporte</span>
+							<span class="tag">Cajero</span>
+						</ul>
+					</div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 22 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size10 courierinput">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 9 </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class=" ng-scope size10 ">
+
+					<div class=" ui-select-multiple select2 select2-container select2-container-multi ng-valid">
+						<ul class="select2-choices">
+							<span class="ui-select-match" placeholder="Categorías..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Drone</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+							<span class="ui-select-match" placeholder="Telefonos..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Impresoras</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+				              <!-- <li class="select2-search-field">
+				                <input type="text" role="combobox" aria-expanded="true" aria-owns="ui-select-choices-0" aria-label="Select box" aria-activedescendant="ui-select-choices-row-0-0" class="select2-input ui-select-search ng-pristine ng-untouched ng-valid" placeholder=""  style="width: 112px;" >
+				            </li> -->
+				        </ul>
+				        <div class="select2-drop select2-with-searchbox select2-drop-active select2-display-none" >
+				        	<ul class="ui-select-choices ui-select-choices-content select2-results ng-scope">
+				        		<li class="ui-select-choices-group" >
+				        			<div class="ui-select-choices-group-label select2-result-label ng-binding ng-hide" >
+				        			</div>
+				        			<ul role="listbox" id="ui-select-choices-0" class="select2-result-single"><!-- ngRepeat: person in $select.items -->
+				        			</ul>
+				        		</li>
+				        	</ul>
+				        </div>
+				    </div>
+				    <div class="ng-pristine ng-untouched ng-valid ng-scope">  </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td>
+
+					<a href="#mantenedor-edit">
+						<button class="toticon toticon-pencil tt-xs botonDescargar"></button>
+					</a>
+						<!-- <button class="toticon toticon-trash tt-xs botonDescargar">
+					</button> -->
+					<!-- <span class="toticon toticon-check ttx xs" style="padding-top:3px"></span> -->
+				</td>
+			</tr>
+			<tr>
+				<!-- ngIf: !config.noEsBorrable -->
+				<td class="editLinea ng-scope" ></td>
+				<!-- ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class="bulkItemInput ng-scope size10">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 1 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> ¿Cómo puedo saber si el drone está funcionando? </div>
+					<div>
+						<ul class="">
+							<span class="tag">Administrador</span>
+							<span class="tag">Dueño</span>
+							<span class="tag">Soporte</span>
+							<span class="tag">Cajero</span>
+						</ul>
+					</div>
+				</td>
+				<td class="bulkItemInput ng-scope size20">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 12 </div>
+				</td>
+				<td class="bulkItemInput ng-scope size10 courierinput">
+					<div class="ng-pristine ng-untouched ng-valid ng-scope"> 3 </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td class=" ng-scope size10 ">
+
+					<div class=" ui-select-multiple select2 select2-container select2-container-multi ng-valid">
+						<ul class="select2-choices">
+							<span class="ui-select-match" placeholder="Categorías..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Drone</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+							<span class="ui-select-match" placeholder="Telefonos..."><!-- ngRepeat: $item in $select.selected -->
+								<li class="ui-select-match-item select2-search-choice ng-scope" >
+									<span >
+										<span class="ng-binding ng-scope">Impresoras</span>
+									</span>
+									<!-- <a href="#" class="ui-select-match-close select2-search-choice-close" ></a> -->
+								</li><!-- end ngRepeat: $item in $select.selected -->
+							</span>
+					          <!-- <li class="select2-search-field">
+					            <input type="text" role="combobox" aria-expanded="true" aria-owns="ui-select-choices-0" aria-label="Select box" aria-activedescendant="ui-select-choices-row-0-0" class="select2-input ui-select-search ng-pristine ng-untouched ng-valid" placeholder=""  style="width: 112px;" >
+					        </li> -->
+					    </ul>
+					    <div class="select2-drop select2-with-searchbox select2-drop-active select2-display-none" >
+					    	<ul class="ui-select-choices ui-select-choices-content select2-results ng-scope">
+					    		<li class="ui-select-choices-group" >
+					    			<div class="ui-select-choices-group-label select2-result-label ng-binding ng-hide" >
+					    			</div>
+					    			<ul role="listbox" id="ui-select-choices-0" class="select2-result-single"><!-- ngRepeat: person in $select.items -->
+					    			</ul>
+					    		</li>
+					    	</ul>
+					    </div>
+					</div>
+					<div class="ng-pristine ng-untouched ng-valid ng-scope">  </div>
+				</td><!-- end ngRepeat: campo in ::config.campos  | filter:{escondido: 0} -->
+				<td>
+
+					<a href="#mantenedor-edit">
+						<button class="toticon toticon-pencil tt-xs botonDescargar">
+						</button></a></span>
+					          <!-- <button class="toticon toticon-trash tt-xs botonDescargar">
+					      </button> -->
+					      <span class="toticon toticon-check ttx xs" style="padding-top:3px"></span>
+			  	</td>
+			</tr>
+		</table>
+
+		<div class="botonPagina ng-hide" >
+			<button class="toticon toticon2-caretizquierda tt-s circulo bg07 fgwhite"></button>
+		</div><!-- ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope " >
+			<span class="ng-binding botonPagina si">1</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope" >
+			<span class="ng-binding botonPagina">2</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope" >
+			<span class="ng-binding botonPagina">3</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope" >
+			<span class="ng-binding botonPagina">4</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-scope" >
+			<span class="ng-binding botonPagina">5</span>
+		</div><!-- end ngRepeat: boton in botones -->
+		<div class="botonPagina ng-hide" >
+			<button class="toticon toticon2-caretderecha tt-s circulo bg07 fgwhite" ></button>
+		</div>
+	</div>
+</div>

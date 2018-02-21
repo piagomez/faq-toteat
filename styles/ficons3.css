@@ -1,0 +1,163 @@
+@font-face {
+	font-family: 'TotIconos3';
+	src:url('fonts/TotIconos3.eot');
+	src:url('fonts/TotIconos3.eot?#iefix') format('embedded-opentype'),
+		url('fonts/TotIconos3.woff') format('woff'),
+		url('fonts/TotIconos3.ttf') format('truetype'),
+		url('fonts/TotIconos3.svg?#TotIconos3') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="toticon3-"], [class*=" toticon3-"] {
+	font-family: 'TotIconos3' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.toticon3-caret-light-abajo:before {
+	content: "\e6ec";
+}
+.toticon3-caret-light-arriba:before {
+	content: "\e6ed";
+}
+.toticon3-caret-light-derecha:before {
+	content: "\e6ee";
+}
+.toticon3-caret-light-izquierda:before {
+	content: "\e6ef";
+}
+.toticon3-caja-billetes:before {
+	content: "\e6e9";
+}
+.toticon3-wireless-router:before {
+	content: "\e6ea";
+}
+.toticon3-g:before {
+	content: "\e6eb";
+}
+.toticon3-paste:before {
+	content: "\e6e7";
+}
+.toticon3-copy:before {
+	content: "\e6e8";
+}
+.toticon3-tablet:before {
+	content: "\e6de";
+}
+.toticon3-desktop:before {
+	content: "\e6df";
+}
+.toticon3-notebook:before {
+	content: "\e6e0";
+}
+.toticon3-reserva-online:before {
+	content: "\e6e1";
+}
+.toticon3-mapa:before {
+	content: "\e6e2";
+}
+.toticon3-print-2:before {
+	content: "\e6e3";
+}
+.toticon3-ventas:before {
+	content: "\e6e4";
+}
+.toticon3-movil:before {
+	content: "\e6e5";
+}
+.toticon3-arqueo:before {
+	content: "\e6e6";
+}
+.toticon3-abrir-turno:before {
+	content: "\e600";
+}
+.toticon3-adjunto:before {
+	content: "\e601";
+}
+.toticon3-agregar-menu:before {
+	content: "\e602";
+}
+.toticon3-agrupar-mesas:before {
+	content: "\e603";
+}
+.toticon3-ajustes:before {
+	content: "\e604";
+}
+.toticon3-align-justify:before {
+	content: "\e605";
+}
+.toticon3-alphabet-alt:before {
+	content: "\e606";
+}
+.toticon3-alphabet:before {
+	content: "\e607";
+}
+.toticon3-antena:before {
+	content: "\e608";
+}
+.toticon3-antena2:before {
+	content: "\e609";
+}
+.toticon3-asterisk:before {
+	content: "\e60a";
+}
+.toticon3-attributes:before {
+	content: "\e60b";
+}
+.toticon3-baht:before {
+	content: "\e60c";
+}
+.toticon3-ban-circle:before {
+	content: "\e60d";
+}
+.toticon3-beaker:before {
+	content: "\e60e";
+}
+.toticon3-bell-alt:before {
+	content: "\e60f";
+}
+.toticon3-bol:before {
+	content: "\e610";
+}
+.toticon3-cajaregistradora:before {
+	content: "\e611";
+}
+.toticon3-calculadora:before {
+	content: "\e612";
+}
+.toticon3-calculadora2:before {
+	content: "\e613";
+}
+.toticon3-calendario:before {
+	content: "\e614";
+}
+.toticon3-camara:before {
+	content: "\e615";
+}
+.toticon3-camera:before {
+	content: "\e616";
+}
+.toticon3-cartamenu:before {
+	content: "\e620";
+}
+.toticon3-cerrar-turno:before {
+	content: "\e621";
+}
+.toticon3-chart-alt:before {
+	content: "\e622";
+}
+.toticon3-chart:before {
+	content: "\e623";
+}
+.toticon3-check:before {
+	content: "\e624";
+}

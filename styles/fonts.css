@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans'), local('OpenSans'),
+  url(fonts/open-sans/OpenSans-Regular.ttf) format('truetype'),
+  url(fonts/open-sans/OpenSans-Regular.woff2) format('woff2'),
+  url(fonts/open-sans/OpenSans-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+  url(fonts/open-sans/OpenSans-Bold.ttf) format('truetype'),
+  url(fonts/open-sans/OpenSans-Bold.woff2) format('woff2'),
+  url(fonts/open-sans/OpenSans-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'),
+  url(fonts/open-sans/OpenSans-Italic.ttf) format('truetype'),
+  url(fonts/open-sans/OpenSans-Italic.woff2) format('woff2'),
+  url(fonts/open-sans/OpenSans-Italic.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+  url(fonts/open-sans/OpenSans-Light.ttf) format('truetype')
+  /*url(fonts/open-sans/OpenSans-Italic.woff2) format('woff2'),
+  url(fonts/open-sans/OpenSans-Italic.woff) format('woff');*/
+}
+
+
+
+.toticon {
+  width: auto;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  display: inline-block;
+  background-color: transparent;
+
+
+
+
+}
+
+.toticon>span{
+  font-family: "Open Sans", sans-serif;
+}
+/* OJO BORRAR line-height:1 en fonts, quitar parametros de fonts y agregar !important a font-family de ficons1, 2 y 3 */
+
+

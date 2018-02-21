@@ -1,0 +1,258 @@
+<div class="navTitulo" >
+  <div class="titulo">
+    <span>FAQ 
+      <a href="#mantenedor">
+        <button class="toticon toticon-pencil tt-xs botonDescargar"></button>
+      </a>
+    </span>
+  </div>
+  <div class="botones buscador" >
+      <input type="text" ng-model="buscador" placeholder="Buscar..."/>
+  </div>
+</div>
+
+<div class="navBarTab categoria"> 
+  <ul ng-init="mostrado='general'"> <!-- variable "mostrado" indica la categoría seleccionada -->
+
+   <!-- con repeat  -->
+    <li  ng-repeat="cat in categorias">
+      <a ng-click="mostrado(cat.categoria)" ng-hide="$index === 0">{{cat.categoria}} </a>
+      <!--               Errores              -->
+      <!-- Problema con la función de ng-click-->
+      <!-- Muestra una categoria en blanco    -->
+    </li>
+  </ul>
+</div>
+
+<div class="faq show">
+  
+  <!-- <div ng-if="turnos=true" ng-include="pregunta">hola turnos</div>
+  <div ng-if="productos=true" ng-include="pregunta">hola productos</div>
+  <div ng-if="clientes=true" ng-include="pregunta">hola clientes</div>
+  <div ng-if="personal=true" ng-include="pregunta">hola personal</div>
+  <div ng-if="inventario=true" ng-include="pregunta">hola inventario</div>
+  <div ng-if="delivery=true" ng-include="pregunta">hola delivery</div>
+ --> 
+  <!-- <div ng-repeat="faq in preguntas | filter:buscador"> -->
+  <!--<div> 
+  <!-- El toggle no funciona! grr rawr <3 
+    <span class="toticon toticon2-caretabajo tt-xxxs ng-scope" ng-if="!open"></span>
+    <span class="toticon toticon2-caretarriba tt-xxxs ng-scope" ng-if="open"></span>
+    <p>{{faq.pregunta}}</p>
+  </div>
+  <div class="cerrado" ng-class="{cerrado:!open}">
+    <h4>{{faq.respuesta}}</h4>
+  </div> -->
+  <!-- <div ng-repeat="fa in faq.preguntas" >
+    <div ng-init="[{open-{{fa.id}}=false},{open-{{fa.id}}=false}]" >
+      <span class="toticon toticon2-caretabajo arrowicon tt-xxxs" ng-click="open-{{fa.id}}=true" ng-if="!open-{{fa.id}}"></span>
+      <span class="toticon toticon2-caretarriba arrowicon tt-xxxs" ng-click="open-{{fa.id}}=false" ng-if="open-{{fa.id}}"></span>
+      <p>{{fa.pregunta}}</p>
+    </div>
+    <div class="abierto r" ng-if="open">
+      <div >{{fa.respuesta}}</div>
+      <br>
+      <div  ng-if="!votado">
+      <span>¿Esta información te ha sido útil?</span>
+      <a class="voto no boton" ng-click="votado=true"><span>No</span></a>
+      <a class="voto si boton" ng-click="votado=true">Sí</a>
+      </div>
+      <div ng-if="votado">
+      <span>Muchas gracias por responer :)</span>
+      </div>
+    </div>
+  </div> -->
+  <div ng-show="mostrado=='general'">
+    <div >
+      <!-- El toggle no funciona! grr rawr <3 -->
+      <span class="toticon toticon2-caretabajo arrowicon tt-xxxs ng-scope" ng-if="!open"></span>
+      <p>{{faq.general.p}}</p>
+    </div>
+    <div class="abierto r" >
+      <div >{{faq.general.r}}</div>
+      <br>
+      <div class="show">
+      <span>¿Esta información te ha sido útil?</span>
+      <a class="voto no boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/"><span>No</span></a>
+      <a class="voto si boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/">Sí</a>
+      </div>
+      <div class="hide">
+      <span>Muchas gracias por responer :)</span>
+      </div>
+    </div>
+  </div>
+
+<!-- Preguntas de Firebase -->
+
+<div ng-repeat="faq1 in preguntas | filter:{pregunta:buscador}:false">
+
+  <!--            Errores          -->
+  <!-- No filtra segun el buscador -->
+
+
+    <!-- <div ng-show="mostrado=='turnos'"> -->
+      <div >
+        <p>{{faq1.pregunta}}</p>
+      </div>
+      <!-- <div class="abierto r" >
+        <div >{{faq.respuesta}}</div>
+        <br>
+      </div> -->
+    <!-- </div> -->
+    <!-- <div ng-show="mostrado=='personal'">
+      <div >
+        <span class="toticon toticon2-caretabajo arrowicon tt-xxxs ng-scope" ng-if="!open"></span>
+        <p>{{faq.personal.p}}</p>
+      </div>
+      <div class="abierto r" >
+        <div >{{faq.personal.r}}</div>
+        <br>
+        <div class="show">
+        <span>¿Esta información te ha sido útil?</span>
+        <a class="voto no boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/"><span>No</span></a>
+        <a class="voto si boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/">Sí</a>
+        </div>
+        <div class="hide">
+        <span>Muchas gracias por responer :)</span>
+        </div>
+      </div>
+    </div>
+    <div ng-show="mostrado=='clientes'">
+      <div >
+        <span class="toticon toticon2-caretabajo arrowicon tt-xxxs ng-scope" ng-if="!open"></span>
+        <p>{{faq.clientes.p}}</p>
+      </div>
+      <div class="abierto r" >
+        <div >{{faq.clientes.r}}</div>
+        <br>
+        <div class="show">
+        <span>¿Esta información te ha sido útil?</span>
+        <a class="voto no boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/"><span>No</span></a>
+        <a class="voto si boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/">Sí</a>
+        </div>
+        <div class="hide">
+        <span>Muchas gracias por responer :)</span>
+        </div>
+      </div>
+    </div>
+    <div ng-show="mostrado=='inventario'">
+      <div >
+        <span class="toticon toticon2-caretabajo arrowicon tt-xxxs ng-scope" ng-if="!open"></span>
+        <p>{{faq.inventario.p}}</p>
+      </div>
+      <div class="abierto r" >
+        <div >{{faq.inventario.r}}</div>
+        <br>
+        <div class="show">
+        <span>¿Esta información te ha sido útil?</span>
+        <a class="voto no boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/"><span>No</span></a>
+        <a class="voto si boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/">Sí</a>
+        </div>
+        <div class="hide">
+        <span>Muchas gracias por responer :)</span>
+        </div>
+      </div>
+    </div>
+    <div ng-show="mostrado=='delivery'">
+      <div >
+        <span class="toticon toticon2-caretabajo arrowicon tt-xxxs ng-scope" ng-if="!open"></span>
+        <p>{{faq.delivery.p}}</p>
+      </div>
+      <div class="abierto r" >
+        <div >{{faq.delivery.r}}</div>
+        <br>
+        <div class="show">
+        <span>¿Esta información te ha sido útil?</span>
+        <a class="voto no boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/"><span>No</span></a>
+        <a class="voto si boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/">Sí</a>
+        </div>
+        <div class="hide">
+        <span>Muchas gracias por responer :)</span>
+        </div>
+      </div>
+    </div>
+    <div ng-show="mostrado=='productos'">
+      <div >
+        <span class="toticon toticon2-caretabajo arrowicon tt-xxxs ng-scope" ng-if="!open"></span>
+        <p>{{faq.productos.p}}</p>
+      </div>
+      <div class="abierto r" >
+        <div >{{faq.productos.r}}</div>
+        <br>
+        <div class="show">
+        <span>¿Esta información te ha sido útil?</span>
+        <a class="voto no boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/"><span>No</span></a>
+        <a class="voto si boton" href="file:///C:/Users/Pia-gomez/Desktop/faq/app/voto.html#/">Sí</a>
+        </div>
+        <div class="hide">
+        <span>Muchas gracias por responer :)</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <span class="toticon toticon2-caretarriba arrowicon tt-xxxs ng-scope" ></span>
+      <p>¿Cómo instalo una impresora fiscal?</p>
+    </div>
+    <div>
+      <span class="toticon toticon2-caretarriba arrowicon tt-xxxs ng-scope" ></span>
+      <p>¿Cómo puedo separar mesas?</p>
+    </div>
+    <div>
+      <span class="toticon toticon2-caretarriba arrowicon tt-xxxs ng-scope" ></span>
+      <p>¿Cómo puedo buscar un cliente?</p>
+    </div>
+    <div>
+      <span class="toticon toticon2-caretarriba arrowicon tt-xxxs ng-scope" ></span>
+      <p>¿Por qué el drone no funciona?</p>
+    </div>
+    <div>
+      <span class="toticon toticon2-caretarriba arrowicon tt-xxxs ng-scope" ></span>
+      <p>¿Qué es Toteat?</p>
+    </div>
+    <div>
+      <span class="toticon toticon2-caretarriba arrowicon tt-xxxs ng-scope" ></span>
+      <p>¿Cómo inicio sesión?</p>
+    </div>
+  </div>
+  <div class="faq hide center">
+    <span class="block toticon toticon-pregunta  tt-m " ></span>
+    No hemos encontrado lo que has buscado, pero puedes hacer tu pregunta y te responderemos a la brevedad
+    <br>
+    <div class="center">
+      <input id="quest" type="text" placeholder="Ingresa tu pregunta aquí..."> 
+      <input class="boton" type="submit" value="Preguntar" name="question">
+    </div>
+  </div> -->
+</div>
+<div class="note">
+  <div class="suger">
+  <span class="toticon toticon-personas2 block arrowicon tt-s " ></span>
+    Te invito a ser parte de la <span>comunidad <a href="#">Toteat</a></span> para que puedas compartir tu opinión con todos nosotros.
+  </div>
+  <strong>Las últimas conversaciones en la comunidad</strong>
+    <div class="foro">
+  <a href="tema 1">
+      <div class="tema">¿Qué es Toteat?</div>
+      <div class="coment">23 <i class="toticon toticon2-mensaje tt-xxxs "></i></div>
+  </a>
+    </div>
+    <div class="foro">
+  <a href="tema 2">
+      <div class="tema">Nueva versión Toteat</div>
+      <div class="coment">50 <i class="toticon toticon2-mensaje tt-xxxs "></i></div>
+  </a>
+    </div>
+    <div class="foro">
+  <a href="tema 3">
+      <div class="tema">Buenas prácticas</div>
+      <div class="coment">34 <i class="toticon toticon2-mensaje tt-xxxs "></i></div>
+  </a>
+    </div>
+    <div class="foro">
+  <a href="tema 4">
+      <div class="tema">Mis comensales se van felices, descubre por qué ;)</div>
+      <div class="coment">140 <i class="toticon toticon2-mensaje tt-xxxs "></i></div>
+  </a>
+</div>
+</div>

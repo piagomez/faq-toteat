@@ -1,0 +1,325 @@
+@font-face {
+	font-family: 'TotIconos2';
+	src:url('fonts/TotIconos2.eot');
+	src:url('fonts/TotIconos2.eot?#iefix') format('embedded-opentype'),
+		url('fonts/TotIconos2.woff') format('woff'),
+		url('fonts/TotIconos2.ttf') format('truetype'),
+		url('fonts/TotIconos2.svg?#TotIconos2') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="toticon2-"], [class*=" toticon2-"] {
+	font-family: 'TotIconos2' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.toticon2-cancelar:before {
+	content: "\e617";
+}
+.toticon2-cancelar2:before {
+	content: "\e618";
+}
+.toticon2-candadoabierto:before {
+	content: "\e619";
+}
+.toticon2-candadocerrado:before {
+	content: "\e61a";
+}
+.toticon2-caretabajo:before {
+	content: "\e61b";
+}
+.toticon2-caretarriba:before {
+	content: "\e61c";
+}
+.toticon2-caretderecha:before {
+	content: "\e61d";
+}
+.toticon2-caretizquierda:before {
+	content: "\e61e";
+}
+.toticon2-carrito:before {
+	content: "\e61f";
+}
+.toticon2-check1:before {
+	content: "\e625";
+}
+.toticon2-check2:before {
+	content: "\e626";
+}
+.toticon2-check3:before {
+	content: "\e627";
+}
+.toticon2-checkvacio:before {
+	content: "\e628";
+}
+.toticon2-circulo-relleno:before {
+	content: "\e62a";
+}
+.toticon2-circulo:before {
+	content: "\e62b";
+}
+.toticon2-clip:before {
+	content: "\e62c";
+}
+.toticon2-codigobarra:before {
+	content: "\e62d";
+}
+.toticon2-codigoqr:before {
+	content: "\e62e";
+}
+.toticon2-cog:before {
+	content: "\e630";
+}
+.toticon2-colon:before {
+	content: "\e631";
+}
+.toticon2-comanda:before {
+	content: "\e632";
+}
+.toticon2-corazon:before {
+	content: "\e633";
+}
+.toticon2-corazonvacio:before {
+	content: "\e634";
+}
+.toticon2-cuadrado-relleno:before {
+	content: "\e635";
+}
+.toticon2-cuenta-baht:before {
+	content: "\e636";
+}
+.toticon2-cuenta-bol:before {
+	content: "\e637";
+}
+.toticon2-cuenta-colon:before {
+	content: "\e638";
+}
+.toticon2-cuenta-dollar:before {
+	content: "\e639";
+}
+.toticon2-cuenta-euro:before {
+	content: "\e63a";
+}
+.toticon2-cuenta-gdp:before {
+	content: "\e63b";
+}
+.toticon2-cuenta-renminbi:before {
+	content: "\e63c";
+}
+.toticon2-cuenta-rupee:before {
+	content: "\e63d";
+}
+.toticon2-cuenta-won:before {
+	content: "\e63e";
+}
+.toticon2-cuenta-yen:before {
+	content: "\e640";
+}
+.toticon2-cuenta:before {
+	content: "\e641";
+}
+.toticon2-cut:before {
+	content: "\e642";
+}
+.toticon2-delivery2:before {
+	content: "\e643";
+}
+.toticon2-dining:before {
+	content: "\e644";
+}
+.toticon2-disk:before {
+	content: "\e645";
+}
+.toticon2-dollar:before {
+	content: "\e646";
+}
+.toticon2-edit:before {
+	content: "\e647";
+}
+.toticon2-engranaje:before {
+	content: "\e648";
+}
+.toticon2-enlace:before {
+	content: "\e649";
+}
+.toticon2-estrella:before {
+	content: "\e64a";
+}
+.toticon2-estrella3:before {
+	content: "\e64b";
+}
+.toticon2-estrellamitad:before {
+	content: "\e64c";
+}
+.toticon2-estrellavacia:before {
+	content: "\e64d";
+}
+.toticon2-euro:before {
+	content: "\e64e";
+}
+.toticon2-exclamacion:before {
+	content: "\e64f";
+}
+.toticon2-expandir:before {
+	content: "\e650";
+}
+.toticon2-external-link:before {
+	content: "\e651";
+}
+.toticon2-extras:before {
+	content: "\e652";
+}
+.toticon2-female:before {
+	content: "\e653";
+}
+.toticon2-file-alt:before {
+	content: "\e654";
+}
+.toticon2-file-download:before {
+	content: "\e655";
+}
+.toticon2-filter:before {
+	content: "\e656";
+}
+.toticon2-folder-close:before {
+	content: "\e657";
+}
+.toticon2-folder-open:before {
+	content: "\e658";
+}
+.toticon2-formasdepago-baht:before {
+	content: "\e659";
+}
+.toticon2-formasdepago-bol:before {
+	content: "\e65a";
+}
+.toticon2-formasdepago-colon:before {
+	content: "\e65b";
+}
+.toticon2-formasdepago-dollar:before {
+	content: "\e65c";
+}
+.toticon2-formasdepago-euro:before {
+	content: "\e65d";
+}
+.toticon2-formasdepago-gbp:before {
+	content: "\e65e";
+}
+.toticon2-formasdepago-renminb:before {
+	content: "\e65f";
+}
+.toticon2-formasdepago-rupee:before {
+	content: "\e660";
+}
+.toticon2-formasdepago-won:before {
+	content: "\e661";
+}
+.toticon2-formasdepago-yen:before {
+	content: "\e666";
+}
+.toticon2-formasdepago:before {
+	content: "\e667";
+}
+.toticon2-forward:before {
+	content: "\e668";
+}
+.toticon2-gbp:before {
+	content: "\e669";
+}
+.toticon2-glass:before {
+	content: "\e66a";
+}
+.toticon2-group:before {
+	content: "\e66b";
+}
+.toticon2-home1:before {
+	content: "\e66c";
+}
+.toticon2-informacion:before {
+	content: "\e66d";
+}
+.toticon2-ingredientes-recetas:before {
+	content: "\e66e";
+}
+.toticon2-jerarquia-extras:before {
+	content: "\e66f";
+}
+.toticon2-jerarquia-menu:before {
+	content: "\e670";
+}
+.toticon2-jet:before {
+	content: "\e671";
+}
+.toticon2-lapiz:before {
+	content: "\e672";
+}
+.toticon2-lista:before {
+	content: "\e674";
+}
+.toticon2-llave:before {
+	content: "\e675";
+}
+.toticon2-llaveinglesa:before {
+	content: "\e676";
+}
+.toticon2-lock:before {
+	content: "\e677";
+}
+.toticon2-lupa:before {
+	content: "\e678";
+}
+.toticon2-lupamas:before {
+	content: "\e679";
+}
+.toticon2-lupamenos:before {
+	content: "\e67a";
+}
+.toticon2-male:before {
+	content: "\e67b";
+}
+.toticon2-map2:before {
+	content: "\e67c";
+}
+.toticon2-mark:before {
+	content: "\e67d";
+}
+.toticon2-mas:before {
+	content: "\e67e";
+}
+.toticon2-mas2:before {
+	content: "\e67f";
+}
+.toticon2-megusta:before {
+	content: "\e680";
+}
+.toticon2-menos:before {
+	content: "\e687";
+}
+.toticon2-menos2:before {
+	content: "\e688";
+}
+.toticon2-mensaje:before {
+	content: "\e689";
+}
+.toticon2-mensajes:before {
+	content: "\e68a";
+}
+.toticon2-mensajes2:before {
+	content: "\e68b";
+}
+.toticon2-menu:before {
+	content: "\e68c";
+}
+.toticon2-menu2:before {
+	content: "\e68d";
+}

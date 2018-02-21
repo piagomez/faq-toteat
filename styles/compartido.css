@@ -1,0 +1,117 @@
+/* Will be compiled down to a single stylesheet with your sass files */
+
+
+
+#contenedorPrincipal{
+    padding:0 5px;
+    margin:0;
+    width:100%;
+}
+@media all and (min-width: 980px)  {
+
+    #contenedorPrincipal{margin-top:60px !important; }
+}
+#cajaBusqueda{
+    height:40px;
+
+}
+#cajaBusqueda form{
+    padding-top:9px;
+    margin:0 40px;
+    text-align:center;
+}
+#cajaBusqueda input{
+    height:22px;
+    border:none;
+    font-size:11px;
+    min-height:22px;
+    padding:0 6px;
+    width:100%;
+}
+#cajaBusqueda button{
+    background-color: #ff6600;
+    background-image:-moz-linear-gradient(top, #FF6600, #A24608);
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#FF6600), to(#A24608));
+    background-image:-webkit-linear-gradient(top, #FF6600, #A24608);
+    background-image:-o-linear-gradient(top, #FF6600, #A24608);
+    background-image:linear-gradient(to bottom, #FF6600, #A24608);
+
+
+
+    background-repeat: repeat-x! important;
+    height:22px;
+    padding-bottom:0px;
+    border:none
+}
+
+
+
+.tituloPermisos{
+    width:50px;
+    text-align: center !important;
+    vertical-align: bottom;
+}
+.celdasPermisos{
+    text-align: center !important;
+}
+
+
+.sfdia, .sfmes, .sfano {width:auto; margin-left:5px; margin-right:5px;}
+
+
+.flotaLeft {float:left}
+.flotaRight {float:right}
+
+
+
+
+
+#msgContainer{
+    min-height:50px;
+}
+
+#msgOnOff{ position:absolute; right:10px; top:10px; display:inline-block; z-index:100;}
+#msgBody {height:auto;  margin:0 auto; padding:10px; background-color: #f2f2f2; min-height:50px;}
+
+#msgLifo {height:auto; margin:0; padding:10px 10px 10px 30px; z-index:90; }
+#msgContFifo{position:relative;}
+
+#msgDetalle { padding:0px; margin:0px; display:inline-block; position:absolute; left:0px; top:0px;  min-height:50px;}
+#msgFifo {height:auto; margin:0 auto; padding:0 0 0 30px; }
+
+.msgLogFifo{
+    max-height:120px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+.msgLogLifo{
+    background-color: #f8e5be;
+    opacity:1;
+}
+
+.msgLogLifoOut {
+    opacity:0;
+    transition: all 2s ease ;
+}
+
+.botoneraContenedor .badgeBotonera{
+    position:absolute;
+    display:inline-block;
+    min-width:18px;
+    height:18px !important;
+    line-height: 18px;
+    font-size:11px;
+    border-radius:9px;
+    top:29px;
+    right:-2px;
+    color:white !important;
+
+}
+
+.botoneraContenedor button{
+    margin:5px;
+}
+.botoneraContenedor .bcSeleccionado{
+    font-weight: bold;
+    color: yellow;
+}
