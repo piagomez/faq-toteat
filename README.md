@@ -3,20 +3,20 @@
 [![framework status](https://img.shields.io/badge/firebase-1.0.2-yellow.svg)](https://www.firebase.com/docs/web/libraries/angular)
 
 
-##faq-toteat
+## faq-toteat
 
 Propuesta UX/UI para FAQ de plataforma interna POS
 
 
 
-#Instalar http-server
+# Instalar http-server
 
-´npm install http-server -g´
+`npm install http-server -g`
 
-#Arrancar http-server
+# Arrancar http-server
 
-´http-server´
+`http-server`
 
-#Abrir navegador y ejecutar
+# Abrir navegador y ejecutar
 
-´http://127.0.0.1:8080/#/faq´ 
+`http://127.0.0.1:8080/#/faq`
